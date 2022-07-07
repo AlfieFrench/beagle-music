@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Beagle music</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    html {
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+
+    .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+    }
+    .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-5 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-6 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  opacity: 0.7;
+}
+
+  .person:hover {
+  border-color: #660000;
+}
+    </style>
+    <style>
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}  
+      </style>
+
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Beagle Music</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#Home">HOME</a></li>
+          <li><a href="#About Us">ABOUT US</a></li>
+          <li><a href="#Newsletter">NEWSLETTER</a></li>
+          <li><a href="#Rock">ROCK</a></li>
+          <li><a href="#Pop">POP</a></li>
+          <li><a href="#Folk">FOLK/ACOUSTIC</a></li>
+          <li><a href="#Suggest">SUGGEST</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3 id="Home">Beagle Music</h3>
+  <style>
+  h3 {
+    font-size: 60px;
+  }
+  </style>
+  <img src="dog.jpg.jpg"  class="img-circle" alt="dog">
+  <h3>Expanding your musical horizons</h3>
+</div>
+<div class="container-fluid bg-2 text-center">
+  <h3 id="About Us">What are we?</h3>
+  <p>Beagle music is an all new community based tool to discover new music you'll love</p>
+  <p>How does it work?</p>
+  <p>You select a band/musician who you enjoy listening to and we <br>bring you new songs based on what other fans of that artist are listening to</p>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3 id="Newsletter">Newsletter</h3><br><br>
+  <p>sign up to receive a monthly email of music news</p><br><br>
+  <form>
+    <label for="fname">Email Adress:</label>
+    <input type="text" id="fname" name="fname"><br>
+  </form>
+  <a href="#2" class="btn btn-default btn-lg" onclick="javascript:newsletterFunction()" >submit</a>
+  <script>function newsletterFunction(){
+    alert("Thank you for signing up")
+  }
+  </script>
+</div>
+
+
+<div class="container-fluid bg-4 text-center">
+  <h3 id="Rock">Rock</h3>
+  <p>Click on your favourite</p>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Foo Fighters</p>
+      <img src="Foo.jpeg.jpg" onclick="javascript:fooFun()" class="img-responsive img-circle person" style="width:100%" alt="Foo">
+      <ul id="foo fighters"></ul>
+    </div>
+    <div class="col-sm-4">
+      <p>Guns'n'Roses</p>
+      <img src="GNR.jpg"  onclick="javascript:gnrfun()" class="img-responsive img-circle person" style="width:100%" alt="GNR">
+      <ul id="guns n roses"></ul>
+    </div>
+    <div class="col-sm-4">
+      <p>Oasis</p>
+      <img src="Oasis.png" onclick="javascript:oasisFun()" class="img-responsive img-circle person" style="width:100%" alt="Oasis">
+      <ul id="oasis"></ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-5 text-center">
+  <h3 id="Pop">Pop</h3>
+  <p>Click on your favourite</p>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Ed Sheeran</p>
+      <img src="Ed.jpg" onclick="javascript:edFun()" class="img-responsive img-circle person" style="width:100%" alt="Ed">
+      <ul id="ed sheeran"></ul>
+    </div>
+    <div class="col-sm-4">
+      <p>Elton John</p>
+      <img src="Elton.jpg"  onclick="javascript:eltonFun()" class="img-responsive img-circle person" style="width:100%"alt="Elton">
+      <ul id="elton john"></ul>
+    </div>
+    <div class="col-sm-4">
+      <p>ABBA</p>
+      <img src="ABBA.jpg.jpg" onclick="javascript:abbaFun()" class="img-responsive img-circle person" style="width:100%" alt="ABBA">
+      <ul id="abba"></ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-6 text-center">
+  <h3 id="Folk">Folk</h3>
+  <p>Click on your favourite</p>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Phoebe bridgers</p>
+      <img src="phoebe.jpg"  onclick="javascript:phoebeFun()"class="img-responsive img-circle person" style="width:100%" alt="Phoebe">
+      <ul id="phoebe bridgers"></ul>
+    </div>
+    <div class="col-sm-4">
+      <p>Bob Dylan</p>
+      <input type="image" onclick="javascript:bobFun()" src="bob.jpeg" class="img-responsive img-circle person" style="width:100%" alt="Bob">
+    <div id="folk">
+      <ul id="bob dylan"></ul>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <p>Mumford and Sons</p>
+      <img src="mumford.jpeg" onclick="javascript:mumfordFun()" class="img-responsive img-circle person" style="width:100%" alt="Mumford">
+      <ul id="mumford and sons"></ul>
+    </div>
+  </div>
+</div>
+    
+<script>
+//code for the event of a failed fetch request
+function handleErrors(response) {
+    if (!response.ok) {
+        throw Error(response.statusText);
+        console.log('error')
+    }
+    return response;
+}
+//function to get list of song names after clicking button
+//rock
+function fooFun() {
+   fetch('http://127.0.0.1:8000/foo/list', {mode: 'no-cors'})
+   .then(handleErrors)
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("foo fighters").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });
+}
+
+  function oasisFun() {
+   fetch('http://127.0.0.1:8000/Oasis/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("oasis").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });
+}
+
+  function gnrFun() {
+   fetch('http://127.0.0.1:8000/GnR/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("guns n roses").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}
+//pop
+function edFun() {
+   fetch('http://127.0.0.1:8000/ed/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("ed sheeran").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}
+
+  function abbaFun() {
+   fetch('http://127.0.0.1:8000/abba/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("abba").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}
+
+  function eltonFun() {
+   fetch('http://127.0.0.1:8000/elton/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("elton john").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}
+
+//folk
+function phoebeFun() {
+   fetch('http://127.0.0.1:8000/phoebe/list', {mode: 'no-cors'})
+    .then(response => response.text())
+  .then(text => 
+     document.getElementById("phoebe bridgers").append(JSON)
+  )
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}
+
+
+function bobFun() {
+   fetch('http://127.0.0.1:8000/dylan/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("bob dylan").append(json)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}
+  
+  function mumfordFun() {
+   fetch('http://127.0.0.1:8000/mumford/list', {mode: 'no-cors'})
+    .then(response => response.json())
+  .then(text => {
+     document.getElementById("mumford and sons").append(JSON)
+  })
+  .catch((error) => {
+    // Handle the error
+    console.log(error);
+    console.log('uh oh there was an error contacting the servers');
+    alert("Disconnected from server, failed to retrieve data");
+  });}  
+      
+    //document.getElementById("bob").append(response)
+  //console.log(response)
+    
+     
+    
+    //.catch((error) => alert(error))
+
+
+
+</script>
+
+
+
+
+</div>
+<div class="container-fluid bg-7 text-center">
+  <h3 id="Suggest">Post your own song recommendations <br> along with an artist to whose fans this song would appeal</h3>
+
+  <!-- <form method="post"> -->
+    <label for="artist">If you like :</label>
+    <input type="text" id="artist" name="artist" placeholder="artist" required><br><br>
+    <label for="song">Then you'll love :</label>
+    <input type="text" id="song" name="song" placeholder="song" required><br><br>
+    <input class="submit-button" type="submit" value="add to list" id="button">
+  <!-- </form> -->
+</div>
+
+<ol id="item_list">
+</ol>
+<ol2 id="item_list2">
+</ol2>
+
+<script>// add user suggestion to song suggestions above
+document.getElementById("button").addEventListener('click', function() {
+  var node = document.createElement("li");
+
+  var text = document.getElementById("song").value;
+  var list_name = document.getElementById("artist").value; 
+
+  var textnode=document.createTextNode(text);
+
+  node.appendChild(textnode);
+  // node.appendChild(textnode2);
+  
+  document.getElementById(list_name).appendChild(node);
+  alert("Thank you for your submission")
+})
+
+</script>
+<ul id="test">test</ul>
+
+</body></html>
